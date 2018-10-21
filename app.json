@@ -1,0 +1,10 @@
+{
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "CYPRESS_CACHE_FOLDER=./node_modules/cypress/cache/Cypress npx cypress cache list",
+        "test": "CYPRESS_CACHE_FOLDER=./node_modules/cypress/cache/Cypress npm run test:ci"
+      }
+    }
+  }
+}
